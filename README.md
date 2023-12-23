@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+## River Height Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> This application uses Environment Agency flood and river level data from the real-time data API (Beta).
 
-Currently, two official plugins are available:
+Details of the API can be found [here](https://environment.data.gov.uk/flood-monitoring/doc/reference). In particular, the documentation about the API for individual station data can be found in [this section](https://environment.data.gov.uk/flood-monitoring/doc/reference#stations).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A webpage with graphical statistics for the relevant measuring station (Kings Mill) can be found [here](https://check-for-flooding.service.gov.uk/station/7071).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Technical Information
 
-- Configure the top-level `parserOptions` property like this:
+Run the code locally: `npm run dev`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Production build: `npm run build`, which outputs to the `dist` folder.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+### Checkpoint Dates
+
+The river height readings are based on the King's Mill upstream readings.
+
+* 2023-04-04 15:15 - 2.135m - [Tweet](https://twitter.com/marstonbikepath/status/1643256745370722305)
+    * The water is slightly higher now than in the previous entry. The dry track down the middle is about a couple of feet wide at the narrowest. --Nigel
+* 2023-04-04 14:30 - 2.133m - [Tweet](https://twitter.com/marstonbikepath/status/1643251785010651140)
+    * At 2.30pm today water creeping onto cycle path at city side towards the cattle grid. About a meter of dry path on the crown but wet either side. So still passable for all for now.  --Sebastian
+* 2023-01-20 10:30 - 2.002m - [Tweet](https://twitter.com/marstonbikepath/status/1616384075207512067)
+    * Water completely receded from the path now. Very icy along the path and on the bridge  --Jonathan
+* 2023-01-17 19:00 - 2.19m - [Tweet from same time](https://twitter.com/marstonbikepath/status/1615423732972982306)
+    * my picture = fully flooded, possibly passable by rocking pedals
+	* Repeating the warning. Water level has gone down compared with this morning. Passable on bike or in wellies. But there is black ice at the Marston end of the flood as you go around the signs - REALLY slippery! I think will be even more treacherous in the morning. --Dom W
+* 2023-01-17 13:00 - 2.189m - [Tweet](https://twitter.com/marstonbikepath/status/1615342590760566784)
+    * cycled through at lunchtime 17th Jan, water was above pedal height. Audience of spectators on the bridge end. Ice on both ends slippier than it looks. Ice-cold water rushed into the top of my right (ankle-height) boot, but none in my left... make of that what you will & ... --Sam
+* 2023-01-14 10:00 - 2.119m - [Tweet](https://twitter.com/marstonbikepath/status/1614204598884995079)
+    * Couple of inches deep in middle of path. Easily passable on bike or in wellies. Very wet feet otherwise --Jonathan
+* 2023-01-12 16:30 - 2.036m - [Tweet](https://twitter.com/marstonbikepath/status/1613575883238817793)
+    * Latest update 2.04m/4:30pm water is just starting to run over the crest of the path up to the first light pole (?). You can still walk through in shoes but you will notice if you have a hole in your sole.  --K
+* 2023-01-12 08:00 - 2.02m - [Tweet](https://twitter.com/marstonbikepath/status/1613445555677454337)
+    * Passable this morning even by foot, despite river levels rising significantly over night. A couple of feet clear at worst. Suspect it will deteriorate as the day progresses. --
+* 2022-11-29 20:00 - 2.216m - [Tweet](https://twitter.com/marstonbikepath/status/1597687669559115776)
+    * Nice manageable 1-2cm! No need for a bike/piggy back/wellies. --Jack Nunn
+* 2022-11-29 19:15 - 2.218m - [Tweet](https://twitter.com/marstonbikepath/status/1597673804767105025)
+    * Approx 4 cm at the deepest, doable in wellies or solid walking shoes but feet will get damp in trainers --Rhydian
+* 2022-11-28 7:30 - 2.242m - [Tweet](https://twitter.com/marstonbikepath/status/1597133193714364416)
+    * Cycle path flooded near the cattle grid by the bridges. Easily passable by bike or in good boots. Work shoes won't cut it. Water rising.  --Andris
