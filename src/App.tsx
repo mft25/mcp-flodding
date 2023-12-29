@@ -31,6 +31,8 @@ function App() {
         <h2><a href={getReadingStationUrl(KingsMillUpstreamStationId)}>
           Link
         </a></h2>
+        <div>Heighest OK: 2.13m</div>
+        <div>Lowest not OK: 2.02m</div>
       </div>
       <div style={{marginTop: '5rem'}}>
         <h2>Current river height at Islip:</h2>
@@ -38,6 +40,18 @@ function App() {
         <h2><a href={getReadingStationUrl(IslipStationId)}>
         Link
         </a></h2>
+        <div>Heighest OK: 8.45m</div>
+        <div>Lowest not OK: 8.07m</div>
+      </div>
+      <div>
+        <h2>
+          <div><a href="https://twitter.com/marstonbikepath">
+            Marston Cycle Path - Twitter
+          </a></div>
+          <div><a href="http://urchin.earth.li/~ganesh/cgi-bin/psychopath.pl?mode=view">
+            Ganesh S Website
+          </a></div>
+        </h2>
       </div>
     </>
   )
