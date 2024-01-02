@@ -1,5 +1,7 @@
 ## River Height Data
 
+http://mcp.mfturner.co.uk/
+
 > This application uses Environment Agency flood and river level data from the real-time data API (Beta).
 
 Useful links:
@@ -10,6 +12,8 @@ Useful links:
 
 
 ### Technical Information
+
+Install dependencies: `npm i`
 
 Run the code locally: `npm run dev`
 

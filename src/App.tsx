@@ -19,6 +19,9 @@ function App() {
           <div><a href="http://urchin.earth.li/~ganesh/cgi-bin/psychopath.pl?mode=view">
             Ganesh S Website
           </a></div>
+          <div><a href="https://github.com/mft25/mcp-flooding">
+            GitHub (with Twitter sentiment data)
+          </a></div>
         </h2>
       </div>
     </>
