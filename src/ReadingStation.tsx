@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import { getLatestRiverHeight, getReadingStationUrl } from './river-height-service/river-height-service'
+import { useEffect, useState } from 'react'
+import { getLatestReading, getReadingStationUrl } from './river-height-service/river-height-service'
 import ReadingStationType from './river-height-service/ReadingStationType';
 
 function ReadingStation(props: {station: ReadingStationType}) {
   const [reading, setReading] = useState<any>(null);
 
-  getLatestRiverHeight(props.station.stationCode, setReading);
+  useEffect(() => {
+    getLatestReading(props.station.stationCode, setReading);
+  }, [props, setReading]);
 
   return (
     <>
